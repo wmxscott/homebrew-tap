@@ -1,0 +1,27 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: macos-15
+    steps:
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@main
+
+      - name: Style
+        run: brew style wmxscott/tap
+
+      - name: Audit
+        run: brew audit --strict --online --tap wmxscott/tap
+
+      - name: Install and test each formula
+        run: |
+          for formula in $(brew tap-info --json wmxscott/tap | jq -r '.[0].formula_names[]'); do
+            brew install --build-from-source "$formula"
+            brew test "$formula"
+          done
