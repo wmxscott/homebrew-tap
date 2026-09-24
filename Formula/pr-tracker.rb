@@ -1,7 +1,7 @@
 class PrTracker < Formula
   include Language::Python::Virtualenv
 
-  desc "Track the pull requests your coding agents open, and tell them when checks change"
+  desc "Track the pull requests your coding agents open and report check changes"
   homepage "https://github.com/wmxscott/pr-tracker"
   url "https://github.com/wmxscott/pr-tracker/archive/refs/tags/v1.0.0.tar.gz"
   sha256 "57b68dd63731f78cea450bd2074c164e7348bd10bafd2b426a502f7067160cf0"
