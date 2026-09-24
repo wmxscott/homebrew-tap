@@ -9,6 +9,7 @@ brew tap wmxscott/tap
 | Formula | What it does |
 |---|---|
 | [`git-autofetch`](https://github.com/wmxscott/git-autofetch) | Keeps git remotes up to date in the background, logging in at most once per host so ssh never prompts while you're away |
+| [`herdr-wkt`](https://github.com/wmxscott/herdr-wkt) | Git worktrees that open as Herdr workspaces, with `wkt` as a short alias |
 | [`seckey-dialog`](https://github.com/wmxscott/seckey-dialog) | Native macOS PIN, passphrase and touch prompts for gpg-agent and ssh, for hardware security keys |
 | [`theme-monitor`](https://github.com/wmxscott/theme-monitor) | Writes the macOS light/dark appearance to a file whenever it changes, so terminal tools can follow dark mode |
 
