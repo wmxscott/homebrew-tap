@@ -3,8 +3,8 @@ class PrTracker < Formula
 
   desc "Track the pull requests your coding agents open and report check changes"
   homepage "https://github.com/wmxscott/pr-tracker"
-  url "https://github.com/wmxscott/pr-tracker/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "57b68dd63731f78cea450bd2074c164e7348bd10bafd2b426a502f7067160cf0"
+  url "https://github.com/wmxscott/pr-tracker/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "746c8027ebcfb6a788ed295c8666cfeff2f86a4748e29f6e074fdaefa4352b88"
   license "MIT"
   head "https://github.com/wmxscott/pr-tracker.git", branch: "main"
 
