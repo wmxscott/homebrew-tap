@@ -9,11 +9,11 @@ brew tap wmxscott/tap
 | Formula | What it does |
 |---|---|
 | [`git-autofetch`](https://github.com/wmxscott/git-autofetch) | Keeps git remotes up to date in the background, logging in at most once per host so ssh never prompts while you're away |
-| [`herdr-wkt`](https://github.com/wmxscott/herdr-wkt) | Git worktrees that open as Herdr workspaces, with `wkt` as a short alias |
 | [`pr-tracker`](https://github.com/wmxscott/pr-tracker) | Tracks the pull requests your AI agent sessions open, and tells each session when checks or reviews change |
 | [`seckey-dialog`](https://github.com/wmxscott/seckey-dialog) | Native macOS PIN, passphrase and touch prompts for gpg-agent and ssh, for hardware security keys |
 | [`theme-monitor`](https://github.com/wmxscott/theme-monitor) | Writes the macOS light/dark appearance to a file whenever it changes, so terminal tools can follow dark mode |
 | [`upkeep`](https://github.com/wmxscott/upkeep) | Runs your update commands (brew, mise, npm and the like) in parallel, on demand or on a catch-up schedule |
+| [`wkt`](https://github.com/wmxscott/wkt) | Git worktrees in a `.bare` layout, one command each, opened as Herdr workspaces when run inside Herdr |
 
 Install one without tapping first:
 
