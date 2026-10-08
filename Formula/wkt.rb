@@ -1,8 +1,8 @@
 class Wkt < Formula
   desc "Git worktrees in a .bare layout, opened as Herdr workspaces inside Herdr"
   homepage "https://github.com/wmxscott/wkt"
-  url "https://github.com/wmxscott/wkt/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "b5197171ab6fc4b097cc88f74dac774e4e6306e14c7023582e55a34f85127d1a"
+  url "https://github.com/wmxscott/wkt/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "3fff7e6694ee2978104aaee8344d932e8505d3146fe0f9fb98ac370b7a28b1d6"
   license "MIT"
   head "https://github.com/wmxscott/wkt.git", branch: "main"
 
@@ -11,6 +11,16 @@ class Wkt < Formula
 
   def install
     bin.install "bin/wkt"
+  end
+
+  def caveats
+    <<~EOS
+      Running wkt with no arguments opens a picker. It needs fzf 0.36 or newer:
+        brew install fzf
+      To have the picker follow macOS's light and dark mode, install
+      https://github.com/wmxscott/theme-monitor, or set WKT_THEME.
+      Its icons need a Nerd Font in your terminal.
+    EOS
   end
 
   test do
