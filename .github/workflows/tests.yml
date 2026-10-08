@@ -19,6 +19,12 @@ jobs:
       - name: Audit
         run: brew audit --strict --online --tap wmxscott/tap
 
+      # The runner image ships openssl@1.1 with stale links that block linking openssl@3.
+      - name: Remove the runner's openssl@1.1
+        run: |
+          brew uninstall --ignore-dependencies --force openssl@1.1 || true
+          brew cleanup --prune-prefix
+
       - name: Install and test each formula
         run: |
           for formula in $(brew tap-info --json wmxscott/tap | jq -r '.[0].formula_names[]'); do
