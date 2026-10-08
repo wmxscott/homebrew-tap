@@ -19,9 +19,11 @@ jobs:
       - name: Audit
         run: brew audit --strict --online --tap wmxscott/tap
 
-      # The runner image ships a linked openssl@1.1 that blocks linking openssl@3.
-      - name: Unlink the runner's openssl@1.1
-        run: brew unlink openssl@1.1 || true
+      # The runner image ships openssl@1.1 with stale links that block linking openssl@3.
+      - name: Remove the runner's openssl@1.1
+        run: |
+          brew uninstall --ignore-dependencies --force openssl@1.1 || true
+          brew cleanup --prune-prefix
 
       - name: Install and test each formula
         run: |
