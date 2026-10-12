@@ -1,8 +1,8 @@
 class Wkt < Formula
   desc "Git worktrees in a .bare layout, opened as Herdr workspaces inside Herdr"
   homepage "https://github.com/wmxscott/wkt"
-  url "https://github.com/wmxscott/wkt/archive/refs/tags/v1.1.0.tar.gz"
-  sha256 "3fff7e6694ee2978104aaee8344d932e8505d3146fe0f9fb98ac370b7a28b1d6"
+  url "https://github.com/wmxscott/wkt/archive/refs/tags/v1.1.1.tar.gz"
+  sha256 "b630dbdfd7068f0ef66e4fa5461fc8b49601ff691112d10f4344b15314a415ed"
   license "MIT"
   head "https://github.com/wmxscott/wkt.git", branch: "main"
 
