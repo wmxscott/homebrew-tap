@@ -1,8 +1,8 @@
 class Wkt < Formula
-  desc "Git worktrees in a .bare layout, opened as Herdr workspaces inside Herdr"
+  desc "Git worktrees, opened as tmux sessions or Herdr workspaces on request"
   homepage "https://github.com/wmxscott/wkt"
-  url "https://github.com/wmxscott/wkt/archive/refs/tags/v1.1.1.tar.gz"
-  sha256 "b630dbdfd7068f0ef66e4fa5461fc8b49601ff691112d10f4344b15314a415ed"
+  url "https://github.com/wmxscott/wkt/archive/refs/tags/v2.0.0.tar.gz"
+  sha256 "7e67648c400e9be3b02093e49819c96629606c53cb96920a986e64aa378ebc36"
   license "MIT"
   head "https://github.com/wmxscott/wkt.git", branch: "main"
 
@@ -34,7 +34,6 @@ class Wkt < Formula
     SH
     chmod 0755, testpath/"stub/herdr"
     ENV.prepend_path "PATH", testpath/"stub"
-    ENV["HERDR_TAB_ID"] = "test"
 
     ENV["GIT_AUTHOR_NAME"] = ENV["GIT_COMMITTER_NAME"] = "Test"
     ENV["GIT_AUTHOR_EMAIL"] = ENV["GIT_COMMITTER_EMAIL"] = "test@example.com"
@@ -45,9 +44,12 @@ class Wkt < Formula
     mkdir "layout" do
       system bin/"wkt", "setup", testpath/"origin.git"
       cd "main" do
-        assert_match "opened in Herdr", shell_output("#{bin}/wkt new -b topic")
+        refute_match "opened", shell_output("#{bin}/wkt new -b other")
+        refute_path_exists testpath/"herdr.log"
+        assert_match "opened in Herdr", shell_output("#{bin}/wkt new -b topic --herdr")
       end
     end
+    assert_equal "other", shell_output("git -C #{testpath}/layout/other branch --show-current").chomp
     assert_equal "topic", shell_output("git -C #{testpath}/layout/topic branch --show-current").chomp
     assert_match "worktree open", (testpath/"herdr.log").read
   end
