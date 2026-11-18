@@ -1,8 +1,8 @@
 class Wkt < Formula
   desc "Git worktrees, opened as tmux sessions or Herdr workspaces on request"
   homepage "https://github.com/wmxscott/wkt"
-  url "https://github.com/wmxscott/wkt/archive/refs/tags/v2.0.0.tar.gz"
-  sha256 "7e67648c400e9be3b02093e49819c96629606c53cb96920a986e64aa378ebc36"
+  url "https://github.com/wmxscott/wkt/archive/refs/tags/v2.1.0.tar.gz"
+  sha256 "f96f0f1e88a991efd65644137f3d22725b2e154898e690e4b7d506339098804d"
   license "MIT"
   head "https://github.com/wmxscott/wkt.git", branch: "main"
 
