@@ -12,9 +12,10 @@ brew tap wmxscott/tap
 | [`herdr-projects`](https://github.com/wmxscott/herdr-projects) | Keeps a list of your projects and opens each as a Herdr workspace, labelled with its group and name |
 | [`pr-tracker`](https://github.com/wmxscott/pr-tracker) | Tracks the pull requests your AI agent sessions open, and tells each session when checks or reviews change |
 | [`seckey-dialog`](https://github.com/wmxscott/seckey-dialog) | Native macOS PIN, passphrase and touch prompts for gpg-agent and ssh, for hardware security keys |
+| [`switchboard`](https://github.com/wmxscott/switchboard) | Keyboard-only tmux session switcher grouped by git repo, with Claude Code agent status in the picker and the status bar |
 | [`theme-monitor`](https://github.com/wmxscott/theme-monitor) | Writes the macOS light/dark appearance to a file whenever it changes, so terminal tools can follow dark mode |
 | [`upkeep`](https://github.com/wmxscott/upkeep) | Runs your update commands (brew, mise, npm and the like) in parallel, on demand or on a catch-up schedule |
-| [`wkt`](https://github.com/wmxscott/wkt) | Git worktrees in a `.bare` layout, one command each, opened as Herdr workspaces when run inside Herdr |
+| [`wkt`](https://github.com/wmxscott/wkt) | Git worktrees in a `.bare` layout, one command each, opened as tmux sessions or Herdr workspaces on request |
 
 Install one without tapping first:
 
