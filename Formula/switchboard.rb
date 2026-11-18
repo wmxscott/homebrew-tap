@@ -1,10 +1,10 @@
 class Switchboard < Formula
   include Language::Python::Virtualenv
 
-  desc "Keyboard-only tmux session switcher with Claude Code agent state"
+  desc "Keyboard-only tmux session switcher with coding agent state"
   homepage "https://github.com/wmxscott/switchboard"
-  url "https://github.com/wmxscott/switchboard/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "aad573388ac2d8f8c91b32594cbe0a1e0c41374eefecb13fb7a324a0cd0b4812"
+  url "https://github.com/wmxscott/switchboard/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "4d1b2def7c3f674db1b762f43c84162d0ab161ae802f7c6834353825184750c4"
   license "MIT"
   head "https://github.com/wmxscott/switchboard.git", branch: "main"
 
