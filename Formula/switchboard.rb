@@ -3,8 +3,8 @@ class Switchboard < Formula
 
   desc "Keyboard-only tmux session switcher with coding agent state"
   homepage "https://github.com/wmxscott/switchboard"
-  url "https://github.com/wmxscott/switchboard/archive/refs/tags/v1.3.0.tar.gz"
-  sha256 "bde79e8abe65f588e1dc79af374322649e079696383464b85d6e50636bcca202"
+  url "https://github.com/wmxscott/switchboard/archive/refs/tags/v1.4.0.tar.gz"
+  sha256 "08818bc224351b892baadab9c449ed8463ef9907a02a403f92b905569ebbc9ba"
   license "MIT"
   head "https://github.com/wmxscott/switchboard.git", branch: "main"
 
