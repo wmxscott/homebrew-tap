@@ -10,6 +10,7 @@ brew tap wmxscott/tap
 |---|---|
 | [`git-autofetch`](https://github.com/wmxscott/git-autofetch) | Keeps git remotes up to date in the background, logging in at most once per host so ssh never prompts while you're away |
 | [`herdr-projects`](https://github.com/wmxscott/herdr-projects) | Keeps a list of your projects and opens each as a Herdr workspace, labelled with its group and name |
+| [`hotbar`](https://github.com/wmxscott/hotbar) | A keyboard toolbar for tmux: `prefix t` shows your tools as keycaps on the status bar, and a letter opens one in a popup |
 | [`pr-tracker`](https://github.com/wmxscott/pr-tracker) | Tracks the pull requests your AI agent sessions open, and tells each session when checks or reviews change |
 | [`seckey-dialog`](https://github.com/wmxscott/seckey-dialog) | Native macOS PIN, passphrase and touch prompts for gpg-agent and ssh, for hardware security keys |
 | [`switchboard`](https://github.com/wmxscott/switchboard) | Keyboard-only tmux session switcher grouped by git repo, with Claude Code agent status in the picker and the status bar |
